@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="flex flex-col h-screen">
+    <nav
+      id="MENU"
+      class="fixed w-screen h-screen text-3xl justify-center gap-10 items-center flex flex-col lg:hidden bg-blue-900 text-white"
+    >
+      <section id="MENU-ICON-CLOSE" class="absolute top-8 right-8">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="m8.4 17l3.6-3.6l3.6 3.6l1.4-1.4l-3.6-3.6L17 8.4L15.6 7L12 10.6L8.4 7L7 8.4l3.6 3.6L7 15.6zm3.6 5q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22"
+          />
+        </svg>
+      </section>
+      <section>Eventos</section>
+
+      <section>Apostas</section>
+
+      <section>Meu Perfil</section>
+
+      <section>Regulamentos</section>
+      <section class="flex lg:hidden w-60 items-center justify-between mt-10">
+        <section class="flex">
+          <section>
+            <img src="./assets/images/avatar.png" class="rounded-md" alt="" />
+          </section>
+          <section class="text-white ml-2">
+            <div class="font-bold text-xl">Olá Thiago</div>
+            <div class="text-xs -mt-1">Hoje é dia de vitória!</div>
+          </section>
+        </section>
+        <section class="text-red-600">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M6 2h9a2 2 0 0 1 2 2v1a1 1 0 0 1-2 0V4H6v16h9v-1a1 1 0 0 1 2 0v1a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2"
+            />
+            <path
+              fill="currentColor"
+              d="M16.795 16.295c.39.39 1.02.39 1.41 0l3.588-3.588a1 1 0 0 0 0-1.414l-3.588-3.588a.999.999 0 0 0-1.411 1.411L18.67 11H10a1 1 0 0 0 0 2h8.67l-1.876 1.884a.999.999 0 0 0 .001 1.411"
+            />
+          </svg>
+        </section>
+      </section>
+    </nav>
+    <header class="w-full h-20 bg-zinc-900 flex justify-between px-5 py-3">
+      <section id="LOGO" class="w-32">
+        <img src="./assets/images/logo-fight.svg" alt="" class="h-16" />
+      </section>
+      <nav
+        class="hidden lg:flex w-[440px] items-center justify-between text-white font-bold text-sm"
+      >
+        <section>Eventos</section>
+        <img src="./assets/images/arrow.svg" class="w-3" alt="" />
+        <section>Apostas</section>
+        <img src="./assets/images/arrow.svg" class="w-3" alt="" />
+        <section>Meu Perfil</section>
+        <img src="./assets/images/arrow.svg" class="w-3" alt="" />
+        <section>Regulamentos</section>
+      </nav>
+
+      <section
+        class="w-64 flex flex-col lg:flex-row items-center justify-center font-bold lg:gap-2 text-sm lg:text-lg"
+      >
+        <div class="text-white">Minha carteira:</div>
+        <div class="text-lime-600">R$ 2.000,00</div>
+      </section>
+      <section class="hidden lg:flex w-60 items-center justify-between">
+        <section class="flex">
+          <section>
+            <img src="./assets/images/avatar.png" class="rounded-md" alt="" />
+          </section>
+          <section class="text-white ml-2">
+            <div class="font-bold">Olá Thiago</div>
+            <div class="text-xs -mt-1">Hoje é dia de vitória!</div>
+          </section>
+        </section>
+        <section class="text-red-600">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M6 2h9a2 2 0 0 1 2 2v1a1 1 0 0 1-2 0V4H6v16h9v-1a1 1 0 0 1 2 0v1a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2"
+            />
+            <path
+              fill="currentColor"
+              d="M16.795 16.295c.39.39 1.02.39 1.41 0l3.588-3.588a1 1 0 0 0 0-1.414l-3.588-3.588a.999.999 0 0 0-1.411 1.411L18.67 11H10a1 1 0 0 0 0 2h8.67l-1.876 1.884a.999.999 0 0 0 .001 1.411"
+            />
+          </svg>
+        </section>
+      </section>
+      <section id="MENU-ICON" class="flex lg:hidden">
+        <img src="./assets/images/menu-burger.svg" alt="" />
+      </section>
+    </header>
+    <main
+      class="bg-zinc-600 lg:flex-1 flex flex-col lg:flex-row lg:text-base p-10 gap-10"
+    >
+      <section class="w-full lg:w-3/4 flex flex-col">
+        <section class="h-16 text-xl lg:text-4xl font-bold text-white">
+          Braga Pro Showtime Fights 4
+        </section>
+        <section class="flex flex-col lg:flex-row mt-2 gap-10">
+          <section class="w-full lg:w-1/4 bg-slate-600 flex flex-col">
+            <section class="w-full">
+              <img src="./assets/images/event1.jpg" class="w-full" alt="" />
+            </section>
+            <section class="flex flex-col justify-between h-full">
+              <section class="text-xs font-bold text-white p-2">
+                <section class="text-lg">Braga Pro Show Time</section>
+                <section>Data: 10/12/2022</section>
+                <section>Local: Circulo Militar - Curitiba/PR</section>
+                <section>Lutas: 10 lutas</section>
+                <!-- <section>Apostas: 56 apostas (R$ 10.150)</section> -->
+              </section>
+              <section class="flex justify-between text-[10px] gap-2 font-bold">
+                <button class="h-12 bg-lime-600 text-white flex-1">
+                  Mais Informações</button
+                ><button class="hidden h-12 bg-red-600 text-white flex-1">
+                  Apostar
+                </button>
+              </section>
+            </section>
+          </section>
+          <section class="w-full lg:w-3/4 flex flex-col gap-6 text-white">
+            <section
+              class="bg-zinc-800 shadow-lg h-fit lg:h-3/5 p-4 flex flex-col justify-between"
+            >
+              <div class="text-2xl font-semibold">Lutas</div>
+              <div>
+                <span class="text-red-600 font-bold text-xl">22:00</span>
+                <span class="text-base font-bold"
+                  >Marcelo EQUS Valle vs Ricardo SANTO Silva</span
+                >
+              </div>
+              <div>
+                <span class="text-red-600 font-bold text-xl">19:00</span>
+                <span class="text-base font-bold"
+                  >Jorge DEV Silva vs Fernando MONSTRO Braga</span
+                >
+              </div>
+              <div>
+                <span class="text-red-600 font-bold text-xl">17:00</span>
+                <span class="text-base font-bold"
+                  >Andre BOMBA Rocha vs Eduardo GORDOX Burko</span
+                >
+              </div>
+              <div>
+                <span class="text-red-600 font-bold text-xl">13:00</span>
+                <span class="text-base font-bold"
+                  >Helton CICLOP Rica vs Duda FEIOSO Santos</span
+                >
+              </div>
+              <div class="text-xs">
+                Clique no nome de cada lutador para acessar sua rede social.
+              </div>
+            </section>
+            <section class="bg-zinc-800 h-fit lg:h-2/5 p-4">
+              <div class="text-2xl font-semibold">Regras de Apostas</div>
+              <p class="mt-4">
+                Aqui vai uma breve descrição sobre as regras para apostar. Temos
+                que ver certinho o que vai ser colocado aqui. Aqui vai uma breve
+                descrição sobre as regras para apostar. Temos que ver certinho o
+                que vai ser colocado aqui.
+              </p>
+            </section>
+          </section>
+        </section>
+      </section>
+      <aside class="w-full lg:w-1/4 bg-zinc-900 flex flex-col justify-between">
+        <section>
+          <div class="text-white text-xl lg:text-3xl font-bold p-6">
+            Apostas Existentes
+          </div>
+          <div class="text-white font-bold px-6">
+            Marcelo <span class="text-yellow-400">EQUS</span> Valle:
+            <span class="text-lime-500">R$ 15.000</span>
+          </div>
+        </section>
+        <button
+          class="mt-10 h-12 w-full bg-lime-500 hover:bg-sky-500 transition-all duration-1000 text-white font-bold"
+        >
+          Apostar
+        </button>
+      </aside>
+    </main>
+    <script>
+      $("#MENU").hide();
+      function handleMenu(type) {
+        switch (type) {
+          case "show":
+            $("#MENU").show();
+            $("#MENU").removeClass("animate__fadeOut");
+            $("#MENU").addClass("animate__animated animate__fadeIn");
+            break;
+          case "hide":
+            $("#MENU").removeClass("animate__fadeIn");
+            $("#MENU").addClass("animate__animated animate__fadeOut");
+            setTimeout(function () {
+              $("#MENU").hide();
+            }, 1000);
+            break;
+
+          default:
+            break;
+        }
+      }
+      $("#MENU-ICON").click(() => handleMenu("show"));
+      $("#MENU-ICON-CLOSE").click(() => handleMenu("hide"));
+    </script>
+  </body>
+</html>
